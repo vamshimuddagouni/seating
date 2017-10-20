@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exam Seating Arragement</title>
+<meta charset="uft=8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<style>
+.con{
+	padding-top:8px;
+	padding-left:100px;
+	padding-right:150px;
+	padding-bottom:800%;
+	height:550px;
+	background-color:#48C9B0;
+	background-position:center;
+	background-repeat:repeat-y;
+	width:100%;
+	height:700px;
+	color:BLACK;
+	background-attachment:scroll;	
+}
+</style>
+</head>
+<body>
+<!-- header -->
+	<div class="header">
+		<div class="container">
+			<div class="header-nav">
+				<nav class="navbar navbar-default">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+					  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					  </button>
+						<div class="logo">
+							<a class="navbar-brand" href="index.html">Seating Arrangement <span>my first project</span></a>
+						</div>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+					 <ul class="nav navbar-nav">
+					 
+					<li class="hvr-sweep-to-bottom"><a href="roomdetail.html">Room Arrangement</a></li>
+						<li class="hvr-sweep-to-bottom"><a href="update.html" class="scroll">Update Room</a></li>
+						<li class="hvr-sweep-to-bottom"><a href="view.html" class="scroll">View Room</a></li>
+						<li class="hvr-sweep-to-bottom"><a href="logout.php" class="scroll">Logout</a></li>
+				<!--		<li class="hvr-sweep-to-bottom"><a href="login.html">Admin Login</a></li>
+						<li class="hvr-sweep-to-bottom"><a href="faculty.php" class="scroll">Faculty</a></li>
+						<li class="hvr-sweep-to-bottom"><a href="sview.html" class="scroll">Student</a></li>
+						<li class="hvr-sweep-to-bottom"><a href="logout.php" class="scroll">Logout</a></li>
+						<li class="hvr-sweep-to-bottom"><a href="register.html" class="scroll">Sign Up</a></li>
+					 --> </ul>
+					</div><!-- /.navbar-collapse -->
+				</nav>
+			</div>
+		</div>
+	</div>
+<!-- //header -->
+<div class="con">
+<!--Forms-->
+	
+   <div class="loginscene"><div class="page-header">
+        <h1>Room Detail</h1>
+		<h2>Exam Seating Arrangement</h2>
+      </div>
+		<p class="grid1">
+       <!-- <form action="update.html" method="POST">
+<input type="submit" value="UPDATE"/><br></form>
+<form action="view.html" method="POST">
+<input type="submit" value="VIEW"/><br>
+</form>-->
+    <!--    <form action="1update.html" method="POST">
+		<button  type="button" class="btn btn-default btn-info">Update</button>
+        </form>
+		
+		<button href="view.html"type="button" class="btn btn-lg btn-success">View</button>
+       -->
+      </p>
+		
+    <div class="bs-example" data-example-id="simple-horizontal-form">
+    <form class="form-horizontal" action="copy1.php" method="POST">
+      <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Enter Room Number</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="roomno" placeholder="room number">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Enter  No. Of Rows</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="row" placeholder="number of rows">
+        </div>
+      </div>
+	 <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Enter No. Of Columns</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="colmn" placeholder="number of columns">
+        </div>
+      </div>
+	 
+	  
+	  
+	  
+	  </div>
+	  
+	  <div class="bs-example" data-example-id="simple-form-inline">
+	  <div class="form-group">
+	  
+        <label for="inputEmail3" class="col-sm-2 control-label">Branch & Semester</label>
+        <div class="col-sm-2">
+		<select>
+<option value="CSE-I">CSE 1</option>
+<option value="CSE-III">CSE 3</option>
+<option value="CSE-V">CSE 5</option>
+<option value="CSE-VII">CSE 7</option>
+<option value="IT-I">IT 1</option>
+<option value="IT-III">IT 3</option>
+<option value="IT-V">IT 5</option>
+<option value="IT-VII">IT 7</option>
+<option value="ECE-I">ECE 1</option>
+<option value="ECE-III">ECE 3</option>
+<option value="ECE-V">ECE 5</option>
+<option value="ECE-VII">ECE 7</option>
+<option value="MECH-I">MECH 1</option>
+<option value="MECH-III">MECH 3</option>
+<option value="MECH-V">MECH 5</option>
+<option value="MECH-VII">MECH 7</option>
+<option value="EEE-I">EEE 1</option>
+<option value="EEE-III">EEE 3</option>
+<option value="EEE-V">EEE 5</option>
+<option value="EEE-VII">EEE 7</option>
+<option value="CIVIL-I">CIVIL 1</option>
+<option value="CIVIL-III">CIVIL 3</option>
+<option value="CIVIL-V">CIVIL 5</option>
+<option value="CIVIL-VII">CIVIL 7</option>
+</select>
+</t>
+		</div>
+      </div>
+	  <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">No. Of Students</label>
+        <div class="col-sm-2">
+          <input type="text" class="form-control" name="no1" placeholder="no. of student">
+        </div>
+      </div>
+	  <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Starting Roll No.</label>
+        <div class="col-sm-2">
+          <input type="text" class="form-control" name="sr1" placeholder="starting roll no.">
+        </div>
+      </div>
+	
+	  </div>
+	  <div class="bs-example" data-example-id="simple-form-inline">
+	  <div class="form-group">
+	  
+        <label for="inputEmail3" class="col-sm-2 control-label">Branch & Semester</label>
+        <div class="col-sm-2">
+          <select>
+<option value="CSE-I">CSE 1</option>
+<option value="CSE-III">CSE 3</option>
+<option value="CSE-V">CSE 5</option>
+<option value="CSE-VII">CSE 7</option>
+<option value="IT-I">IT 1</option>
+<option value="IT-III">IT 3</option>
+<option value="IT-V">IT 5</option>
+<option value="IT-VII">IT 7</option>
+<option value="ECE-I">ECE 1</option>
+<option value="ECE-III">ECE 3</option>
+<option value="ECE-V">ECE 5</option>
+<option value="ECE-VII">ECE 7</option>
+<option value="MECH-I">MECH 1</option>
+<option value="MECH-III">MECH 3</option>
+<option value="MECH-V">MECH 5</option>
+<option value="MECH-VII">MECH 7</option>
+<option value="EEE-I">EEE 1</option>
+<option value="EEE-III">EEE 3</option>
+<option value="EEE-V">EEE 5</option>
+<option value="EEE-VII">EEE 7</option>
+<option value="CIVIL-I">CIVIL 1</option>
+<option value="CIVIL-III">CIVIL 3</option>
+<option value="CIVIL-V">CIVIL 5</option>
+<option value="CIVIL-VII">CIVIL 7</option>
+</select>
+        </div>
+		
+      </div>
+	  <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">No. Of Students</label>
+        <div class="col-sm-2">
+          <input type="text" class="form-control" name="no2" placeholder="no. of student">
+        </div>
+		
+      </div>
+	  <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Starting Roll No.</label>
+        <div class="col-sm-2">
+          <input type="text" class="form-control" name="sr2" placeholder="starting roll no.">
+        </div>
+		
+      </div>
+	  </div>
+	  <div class="bs-example" data-example-id="simple-form-inline">
+	  <div class="form-group">
+	  
+        <label for="inputEmail3" class="col-sm-2 control-label">Branch & Semester</label>
+        <div class="col-sm-2">
+          <select>
+<option value="CSE-I">CSE 1</option>
+<option value="CSE-III">CSE 3</option>
+<option value="CSE-V">CSE 5</option>
+<option value="CSE-VII">CSE 7</option>
+<option value="IT-I">IT 1</option>
+<option value="IT-III">IT 3</option>
+<option value="IT-V">IT 5</option>
+<option value="IT-VII">IT 7</option>
+<option value="ECE-I">ECE 1</option>
+<option value="ECE-III">ECE 3</option>
+<option value="ECE-V">ECE 5</option>
+<option value="ECE-VII">ECE 7</option>
+<option value="MECH-I">MECH 1</option>
+<option value="MECH-III">MECH 3</option>
+<option value="MECH-V">MECH 5</option>
+<option value="MECH-VII">MECH 7</option>
+<option value="EEE-I">EEE 1</option>
+<option value="EEE-III">EEE 3</option>
+<option value="EEE-V">EEE 5</option>
+<option value="EEE-VII">EEE 7</option>
+<option value="CIVIL-I">CIVIL 1</option>
+<option value="CIVIL-III">CIVIL 3</option>
+<option value="CIVIL-V">CIVIL 5</option>
+<option value="CIVIL-VII">CIVIL 7</option>
+</select>
+        </div>
+		
+      </div>
+	  <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">No. Of Students</label>
+        <div class="col-sm-2">
+          <input type="text" class="form-control" name="no3" placeholder="no. of student">
+        </div>
+		
+      </div>
+	  <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Starting Roll No.</label>
+        <div class="col-sm-2">
+          <input type="text" class="form-control" name="sr3" placeholder="starting roll no.">
+        </div>
+		
+      </div>
+	  </div>
+	  <div class="bs-example" data-example-id="simple-form-inline">
+	  <div class="form-group">
+	  
+        <label for="inputEmail3" class="col-sm-2 control-label">Branch & Semester</label>
+        <div class="col-sm-2">
+          <select>
+<option value="CSE-I">CSE 1</option>
+<option value="CSE-III">CSE 3</option>
+<option value="CSE-V">CSE 5</option>
+<option value="CSE-VII">CSE 7</option>
+<option value="IT-I">IT 1</option>
+<option value="IT-III">IT 3</option>
+<option value="IT-V">IT 5</option>
+<option value="IT-VII">IT 7</option>
+<option value="ECE-I">ECE 1</option>
+<option value="ECE-III">ECE 3</option>
+<option value="ECE-V">ECE 5</option>
+<option value="ECE-VII">ECE 7</option>
+<option value="MECH-I">MECH 1</option>
+<option value="MECH-III">MECH 3</option>
+<option value="MECH-V">MECH 5</option>
+<option value="MECH-VII">MECH 7</option>
+<option value="EEE-I">EEE 1</option>
+<option value="EEE-III">EEE 3</option>
+<option value="EEE-V">EEE 5</option>
+<option value="EEE-VII">EEE 7</option>
+<option value="CIVIL-I">CIVIL 1</option>
+<option value="CIVIL-III">CIVIL 3</option>
+<option value="CIVIL-V">CIVIL 5</option>
+<option value="CIVIL-VII">CIVIL 7</option>
+</select>
+        </div>
+		
+      </div>
+	  <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">No. Of Students</label>
+        <div class="col-sm-2">
+          <input type="text" class="form-control" name="no4" placeholder="no. of student">
+        </div>
+		
+      </div>
+	  <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Starting Roll No.</label>
+        <div class="col-sm-2">
+          <input type="text" class="form-control" name="sr4" placeholder="starting roll no.">
+        </div>
+		
+      </div>
+      <!-- <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">SUB CODE:</label>
+        <div class="col-sm-2">
+          <input type="text" class="form-control" name="sc4" placeholder="only 1 letter">
+        </div>
+		
+      </div>
+	  	 -->
+
+	 </div>
+	  
+	  
+	 
+	  
+
+	  <div class="bs-example" data-example-id="simple-horizontal-form">
+<!--<form class="form-horizontal">-->
+      
+      <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Invigilator 1</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="in1" placeholder="invigilator">
+        </div>
+      </div>
+	  
+	 <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Invigilator 2</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="in2" placeholder="invigilator">
+        </div>
+      </div>
+	 </div>
+	 <div class="form-group"> 	
+	 <label for="inputEmail3" class="col-sm-2 control-label">Timing</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="time" placeholder="00:00 AM">
+        </div>
+	 </div>
+	 
+      <div class="form-group">
+        
+		<div class="col-sm-offset-2 col-sm-10">
+         <!--<input type="submit" value="SIGN UP"/><br> -->
+		 <br><button type="submit" class="btn btn-default btn-info">Submit</button>
+        </div>
+   
+    
+  </div>
+  
+        
+       <!-- <button href="copy.php" type="button" class="btn btn-lg btn-success">Submit</button>
+       -->
+	  <!-- <input type="submit" value="SUBMIT"/><br>-->       
+	   </form>
+      
+
+</div>
+<!--short codes end here--></div></div>
+
+
+</body>
+</html>
